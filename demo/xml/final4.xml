@@ -1,0 +1,158 @@
+
+<obj_composed>
+
+	<sub>
+		<id> 1 </id>
+		<obj_1>
+			<sphere>
+				<position>
+					<x> 0 </x>
+					<y> 11 </y>
+					<z> 0 </z>
+				</position>
+				<radius> 13 </radius>
+				<mat> 
+					<color>
+						<r> 0.5 </r>
+						<g> 0.5 </g>
+						<b> 0.5 </b>
+					</color>
+					<refraction> 0.8 </refraction>
+					<indice opt> 1.05 </indice opt>
+				</mat>
+			</sphere>
+
+		</obj_1>
+		<obj_2>
+			<cube>
+				<position>
+					<x> 0 </x>
+					<y> 2 </y>
+					<z> 0 </z>
+				</position>
+				<scale>
+					<x> 45 </x>
+					<y> 10 </y>
+					<z> 45 </z>
+				</scale>
+				<mat> 
+					<color>
+						<r> 0 </r>
+						<g> 0 </g>
+						<b> 0.5 </b>
+					</color>
+					<refraction> 0 </refraction>
+					<indice opt> 1 </indice opt>
+				</mat>
+			</cube>
+		</obj_2>
+	</sub>
+</obj_composed>
+
+<scene>
+	<config>
+		<ambient> 0 </ambient>
+		<filter>  </filter>
+	</config>
+
+	<camera>
+		<position>
+			<x> 0.0 </x>
+			<y> -25.0 </y>
+			<z> -200.0 </z>
+		</position>
+
+		<angle>
+			<x> -15.0 </x>
+			<y> 0.0 </y>
+			<z> 0.0 </z>
+		</angle>
+
+		<fov> 10.0 </fov>
+	</camera>
+
+	<lights>
+		<light>
+			<nb_light> 0 </nb_light>
+			<dist_light> 0 </dist_light>
+			<intensity> 0.6 </intensity>
+			<position>
+				<x> 0.0 </x>
+				<y> 80.0 </y>
+				<z> -150.0 </z>
+			</position>
+			<color>
+				<r> 1.0 </r>
+				<g> 1.0 </g>
+				<b> 1.0 </b>
+			</color>
+		</light>
+	</lights>
+	<objects>
+		<plane>
+			<normal>
+				<x> 0</x>
+				<y> 0</y>
+				<z> -1</z>
+			</normal>
+			<position>
+				<x> 0 </x>
+				<y> 0 </y>
+				<z> 250 </z>
+			</position>
+			<mat>
+				<color>
+					<r> 0.09</r>
+					<g> 0.34 </g>
+					<b> 0.20</b>
+				</color>
+			</mat>
+		</plane>
+		<pobj>
+			<position>
+				<x> 0 </x>
+				<y> 0 </y>
+				<z> -5 </z>
+			</position>
+			<radius> 15</radius>
+			<path>demo/objs/42.obj</path>
+			<mat>
+				<color>
+					<r> 0.88</r>
+					<g> 0.88 </g>
+					<b> 0.88</b>
+				</color>
+			</mat>
+		</pobj>
+		<pobj>
+			<position>
+				<x> 0 </x>
+				<y> 0 </y>
+				<z> 0 </z>
+			</position>
+			<radius> 15</radius>
+			<path>demo/objs/base.obj</path>
+			<mat>
+				<color>
+					<r> 0.35</r>
+					<g> 0.16 </g>
+					<b> 0.0</b>
+				</color>
+			</mat>
+		</pobj>
+		<obj>
+			<id> 1</id>
+			<position>
+				<x> 0.5 </x>
+				<y> -10 </y>
+				<z> 9 </z>
+			</position>
+			<rotation>
+				<x> -75</x>
+				<y> 45</y>
+				<z> 0</z>
+			</rotation>
+		</obj>
+
+	</objects>
+</scene>
